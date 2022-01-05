@@ -4,8 +4,15 @@
   "description": "create rest-api using express",
   "main": "index.js",
   "scripts": {
+    "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keyword": [
+    "node"
+  ],
   "author": "luthfi",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
 }

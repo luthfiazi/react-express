@@ -1,8 +1,15 @@
 const http = require ('http');
+// const hello = require('./hello');
+const moment = require ('moment')
+
 const server = http.createServer((req, res)=>{
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/plain');
-    res.write('Hello World!');
+    // res.write(moment().calendar());
+    res.write(JSON.stringify({
+        'status' : 'success',
+        'message': 'response success'
+    }))
     res.end();
 });
 
